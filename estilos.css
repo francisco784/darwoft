@@ -9,10 +9,11 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    height: 20px;
+    height: 10px;
     background-color: coral;
     align-items: center;
     padding: 10px;
+    
 }
 
 .nombre-empresa {
@@ -66,7 +67,8 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+
 }
 
 td,
@@ -599,15 +601,99 @@ font-weight: 600;
 margin-left: 860px;
 color: black;
 z-index: 10;
-margin-bottom: 35px;
+margin-bottom: 55px;
 
 }
-#box{
-background: tomato;
-margin-left: 860px;
-z-index: 20;
-position: relative;
 
 
 
+
+#botondesplegar{
+    margin-left: 860px;
+    margin-top: 45px;
+    background-color: coral;
+    color: black;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#botondesplegar::after, #botondesplegar::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+}
+
+#botondesplegar:hover{
+    transform: translate(-12px, -12px);
+}
+
+#botondesplegar:hover::after{
+    transform: translate(6px, 6px);
+}
+
+#botondesplegar:hover::before{
+    transform: translate(12px, 12px);
+}
+
+#contenidodesplegable {
+   margin-left: 850px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: -53px;
+    background-color: coral;
+    padding: 24px 12px;
+    
+   
+}
+
+/*nav a {
+    font-weight: 600;
+    padding-right: 10px;
+
+
+}*/
+
+.nav {
+    
+    background-color: coral;
+    color: black;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.nav ::after, .nav::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    
+}
+
+.nav :hover{
+    transform: translate(-12px, -12px);
+}
+
+.nav :hover::after{
+    transform: translate(6px, 6px);
+}
+
+.nav :hover::before{
+    transform: translate(12px, 12px);
 }

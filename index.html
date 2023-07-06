@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="imagenes/icono.png">
     <title>productos 3D</title>
-    <script type="text/javascript" src="carrito.js"></script>
- 
+  
+
 </head>
 <header>
 
@@ -22,20 +22,25 @@
             <h2 class="nombre-empresa">darwoft</h2>
 
         </a>
-       <nav>
-        <div id="contenedorcarrito">
-            <button type="button" id="botondesplegar">mi carrito</button>
-
-        </div>
-
-
-       </nav>
-
-        
         <nav>
+            <div id="contenedorcarrito">
+                <button type="button" id="botondesplegar" >mi carrito</button>
+                <div id="contenidodesplegable">
+                    <p id="articuloscarrito"></p>
+                    <p id="totalcarrito"></p>
+
+                </div>
+            </div>
 
 
-            <a href="" class="nav">informacion</a>
+        </nav>
+
+        <nav>
+            <div class="nav"><a href="">informacion
+
+                </a>
+            </div>
+
 
         </nav>
     </header>
@@ -61,8 +66,8 @@
             <td class="PLA">5000</td>
             <td>
                 <div class="boton">
-                    <input type="checkbox" type="checkbox" name="Spiderman" value=5000 id="btn-switch" class="agregar-carrito"
-                        onclick="sumarCarrito(this.name, this.checked, this.value)">
+                    <input type="checkbox" type="checkbox" name="Spiderman" value=5000 id="btn-switch"
+                        class="agregar-carrito" onclick="sumarCarrito(this.name, this.checked, this.value)">
                     <label for="btn-switch" class="lbl-switch"></label>
                 </div>
 
@@ -215,38 +220,7 @@
     </footer>
 
 
-    <section>
-        <div id="box">papa</div>
-        <div id="carrito">
-            <p>mi carrito</p>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script type="text/javascript" src="carrito.js"></script>
 
 
 
