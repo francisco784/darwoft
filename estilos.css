@@ -649,10 +649,11 @@ margin-bottom: 55px;
    margin-left: 850px;
     display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 20;
     margin-top: -53px;
     background-color: coral;
-    padding: 24px 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   /* padding: 24px 12px;*/
     
    
 }

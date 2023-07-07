@@ -18,10 +18,10 @@ console.log(nombre, checkeado, valor)
 
 sumarPrecios = () => {
    let articuloscarrito1 = document.getElementById("articuloscarrito");
-    articuloscarrito1.innerHTML = " " +  arrayProductos.join(",");
+    articuloscarrito1.innerHTML = "" +  arrayProductos.join(",");
 
-    let totalcarrito1 = document.getElementById("totalcarrito");
-    totalcarrito1.textContent = "total; " + suma;
+    let totalcarrito1 = document.getElementById("PLA");
+    totalcarrito1.textContent = "total; \n" +   suma;
 
     const textocarrito1 = document.getElementById("textocarrito");
     if (articuloscarrito1.length === 0){
